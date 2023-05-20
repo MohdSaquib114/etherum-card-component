@@ -1,0 +1,135 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 40px 20px 40px 20px;
+  
+}
+ 
+/* --Card component style implementation */
+
+main{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1em;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 3%;
+    box-shadow: 0.1em 0.1em 5em 0.5em hsl(214, 53%, 8%);
+}
+
+/* ---Main image of etherum card component implementation-- */
+
+#eth-image{
+  max-width: 100%;
+  object-fit:contain;
+  border-radius: 3%;
+}
+/* --------h1 tag style implementation--------- */
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+
+}
+
+/* ----paragraph tag style implementation for all <p> tag---- */
+
+p{
+  color: hsl(215, 51%, 70%)
+  ;
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+/* --Etherum rate and time style implementation-- */
+
+div{ 
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+price{
+  display: grid;
+  grid-template-columns: 20% 90%;
+    color:  hsl(178, 100%, 50%);
+    align-self: center;
+}
+
+
+  price img
+ {
+    width: 0.9em;
+    
+  }
+  time img{
+    width: 1.3em;
+    align-self: center;
+    margin-right: 0.5em;
+  }
+  div p{
+    
+    justify-self: end;
+  }
+  price strong{
+    font-size: 0.99em;
+   justify-self:start;
+   align-self: center;
+  }
+  time{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-self: end;
+    align-self: center;
+  }
+/* ----line style implementation---- */
+
+  hr{
+    display: block;
+  border:0.1em solid hsl(215, 42%, 24%) ;
+   border-bottom: 0rem;
+  }
+
+/* ---footer style implementation-- */
+  
+   footer{
+    display: grid;
+    grid-template-columns:1fr 4fr ;
+    margin-top: 1em;
+   }
+
+   footer img{
+    border: 0.1em solid white;
+    border-radius: 50%;
+    width: 2rem;
+    align-self: center;
+   }
+   footer p{
+    font-size: 0.99rem;
+   }
+   footer p span{
+    color: aliceblue;
+    font-weight: 500;
+   }
+
+  /* -----Implementation for different views----- */
+
+   @media (min-width:375px) {
+    body{
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 100px 0px 0px 0px;
+     
+    }
+    main{
+      width: 290px;
+      height: 550px;
+  justify-self: center;
+ 
+    }
+
+   }
